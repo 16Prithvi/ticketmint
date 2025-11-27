@@ -76,12 +76,11 @@ By leveraging **NFT (Non-Fungible Token)** technology, every ticket issued on Ti
 
 ## 📸 Screenshots
 
-*(Add your screenshots here. If you don't have them yet, delete this section or leave these placeholders)*
 
-| Landing Page | Event Dashboard |
-| :---: | :---: |
+| Landing Page |
+| :---: |
 |<img width="1245" height="882" alt="image" src="https://github.com/user-attachments/assets/e6531e8a-7969-4223-9992-204afe693ebf" />
- | <img src="https://via.placeholder.com/400x200?text=Dashboard+UI" alt="Dashboard" /> |
+
 
 ---
 
@@ -143,14 +142,6 @@ npx hardhat run scripts/deploy.js --network mumbaierifiable NFT Tickets:** Every
 
 ---
 
-## 📸 Screenshots
-
-
-| Landing Page |
-| :---: |
-| <img src="https://via.placeholder.com/400x200?text=Landing+Page+UI" alt="Landing Page" /> |
-
----
 
 ## 🚀 Getting Started
 
