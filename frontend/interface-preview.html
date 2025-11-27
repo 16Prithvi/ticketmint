@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventChain Interface Preview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .demo-badge {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>🎫 EventChain - Blockchain Ticketing System</h1>
+            <button class="btn btn-primary">Connect Wallet</button>
+        </div>
+        
+        <div class="alert alert-info text-center">
+            <h4>Welcome to EventChain!</h4>
+            <p>Please connect your MetaMask wallet to create events and manage tickets on the blockchain.</p>
+            <p>This is a demonstration of blockchain-based event ticketing using NFTs.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Create New Event</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Event Name</label>
+                                <input type="text" class="form-control" placeholder="Enter event name" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Description</label>
+                                <textarea class="form-control" placeholder="Enter event description" disabled></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Start Time</label>
+                                <input type="datetime-local" class="form-control" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">End Time</label>
+                                <input type="datetime-local" class="form-control" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Ticket Price (ETH)</label>
+                                <input type="number" step="0.01" class="form-control" placeholder="0.1" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Max Tickets</label>
+                                <input type="number" class="form-control" placeholder="100" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Location</label>
+                                <input type="text" class="form-control" placeholder="Enter venue location" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Image URI</label>
+                                <input type="text" class="form-control" placeholder="https://..." disabled>
+                            </div>
+                            <button type="submit" class="btn btn-primary" disabled>
+                                Connect Wallet to Create Event
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Your Tickets</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-secondary text-center">
+                            <p>No tickets owned yet. Connect wallet and mint tickets to see them here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Available Events <span class="demo-badge">DEMO</span></h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Blockchain Conference 2024</h5>
+                                <p class="card-text">The biggest blockchain conference of the year featuring industry leaders and cutting-edge technology discussions.</p>
+                                <p><strong>Location:</strong> San Francisco Convention Center</p>
+                                <p><strong>Ticket Price:</strong> 0.1 ETH</p>
+                                <p><strong>Tickets Available:</strong> 150</p>
+                                <button class="btn btn-success" disabled>
+                                    Connect Wallet to Mint
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">NFT Art Gallery Opening</h5>
+                                <p class="card-text">Exclusive opening of the world's first NFT art gallery featuring digital masterpieces from renowned artists.</p>
+                                <p><strong>Location:</strong> New York Art District</p>
+                                <p><strong>Ticket Price:</strong> 0.05 ETH</p>
+                                <p><strong>Tickets Available:</strong> 75</p>
+                                <button class="btn btn-success" disabled>
+                                    Connect Wallet to Mint
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">DeFi Summit 2024</h5>
+                                <p class="card-text">Join the decentralized finance revolution with talks from DeFi pioneers and hands-on workshops.</p>
+                                <p><strong>Location:</strong> London Financial District</p>
+                                <p><strong>Ticket Price:</strong> 0.2 ETH</p>
+                                <p><strong>Tickets Available:</strong> 200</p>
+                                <button class="btn btn-success" disabled>
+                                    Connect Wallet to Mint
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4>🔧 Technical Features</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Blockchain Features:</h6>
+                            <ul>
+                                <li>✅ NFT-based tickets (ERC721)</li>
+                                <li>✅ Immutable ownership records</li>
+                                <li>✅ Tamper-proof validation</li>
+                                <li>✅ Complete transaction history</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Event Management:</h6>
+                            <ul>
+                                <li>✅ Create and manage events</li>
+                                <li>✅ Set ticket prices in ETH</li>
+                                <li>✅ Control ticket availability</li>
+                                <li>✅ Transfer event ownership</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
