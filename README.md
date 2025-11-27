@@ -1,109 +1,63 @@
-# 🎟️ TicketMint - Blockchain Event Ticketing Platform
+# 🎟️ TicketMint — Blockchain Event Ticketing Platform
 
 [![Solidity](https://img.shields.io/badge/Solidity-2E8B57?style=for-the-badge&logo=solidity&logoColor=white)]()
-[![Polygon](https://img.shields.io/badge/Polygon-854ce6?style=for-the-badge&logo=Polygon&logoColor=white)]()
+[![Polygon](https://img.shields.io/badge/Polygon-854ce6?style=for-the-badge&logo=polygon&logoColor=white)]()
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-🎫 TicketMint is a decentralized event ticketing system built on the Polygon blockchain.
-It leverages NFT-based tickets for transparent, secure, and tamper-proof event management.
+**TicketMint** is a decentralized event ticketing system built on the **Polygon** blockchain.  
+It leverages **NFT-based tickets** for transparent, secure, and tamper-proof event management.
 
-🚀 Overview
+---
 
-Traditional ticketing systems face challenges like fraud, duplication, and lack of transparency.
-TicketMint solves these by issuing verifiable NFTs as event tickets, enabling seamless on-chain validation and secondary market trading.
+## 🚀 Overview
 
-🌐 Live Tech Stack
-Layer	Technology
-Smart Contracts	Solidity, OpenZeppelin
-Blockchain Network	Polygon (Mumbai / Mainnet)
-Frontend	React.js, Ethers.js, TailwindCSS
-Wallet Integration	MetaMask
-Backend (optional)	Node.js (for metadata/IPFS handling)
-✨ Core Features
+Traditional ticketing systems face challenges like fraud, duplication, and lack of transparency.  
+TicketMint solves these by issuing **verifiable NFTs** as event tickets, enabling seamless **on-chain validation** and **secondary market trading**.
 
-🎫 NFT Tickets: Each ticket minted as a unique ERC-721 token.
+---
 
-🔒 Immutable Smart Contracts: Secured via OpenZeppelin templates.
+## 🌐 Live Tech Stack
 
-⚡ Polygon Integration: Faster and cheaper transactions than Ethereum mainnet.
+| Layer               | Technology                                        |
+|---------------------|--------------------------------------------------|
+| **Smart Contracts** | Solidity, OpenZeppelin                           |
+| **Blockchain**      | Polygon (Mumbai / Mainnet)                       |
+| **Frontend**        | React.js, Ethers.js, TailwindCSS                 |
+| **Wallet**          | MetaMask                                         |
+| **Backend (optional)** | Node.js (for metadata / IPFS handling)       |
 
-💳 MetaMask Payments: Easy ticket purchase & validation directly from the wallet.
+---
 
-🖼️ Ticket Metadata: Stored securely on IPFS or in a decentralized format.
+## ✨ Core Features
 
-🧾 Resale Tracking: Prevents black-market resale through smart validation.
+- 🎫 **NFT Tickets** – Each ticket is minted as a unique **ERC-721** token.  
+- 🔒 **Immutable Smart Contracts** – Built using **OpenZeppelin** templates.  
+- ⚡ **Polygon Integration** – Faster and cheaper transactions than Ethereum mainnet.  
+- 💳 **MetaMask Payments** – Easy ticket purchase and validation directly from the wallet.  
+- 🖼️ **Ticket Metadata** – Can be stored on **IPFS** or other decentralized storage.  
+- 🧾 **Resale Tracking** – Prevents black-market resale through smart validation logic.  
 
-⚙️ Setup Instructions
-1️⃣ Prerequisites
+---
 
-Ensure you have:
+## ⚙️ Setup Instructions
 
-Node.js ≥ 16.x
+### 1️⃣ Prerequisites
 
-npm or yarn
+Make sure you have:
 
-MetaMask installed and connected to Polygon (Mumbai) testnet
+- **Node.js** ≥ 16.x  
+- **npm** or **yarn**  
+- **MetaMask** installed and connected to the **Polygon Mumbai** testnet  
 
-2️⃣ Installation
+---
+
+### 2️⃣ Installation
+
+```bash
 # Clone the repository
-git clone https://github.com/16Prithvi/ticket-mint-bc.git
-cd ticket-mint-bc
+git clone https://github.com/16Prithvi/ticketmint.git
+cd ticketmint
 
 # Install dependencies
 npm install
-
-3️⃣ Smart Contract Deployment
-# Compile and deploy contracts to Polygon (using Hardhat)
-npx hardhat compile
-npx hardhat run scripts/deploy.js --network polygon_mumbai
-
-
-Make sure your .env file contains:
-
-PRIVATE_KEY=your_wallet_private_key
-POLYGON_RPC_URL=https://rpc-mumbai.maticvigil.com
-
-4️⃣ Frontend Setup
-cd client
-npm install
-npm start
-
-
-Now open http://localhost:3000
- to view your DApp!
-
-🧠 Smart Contract Design
-Component	Description
-TicketMint.sol	Core contract managing event creation, ticket minting, and validation
-EventFactory.sol	Optional factory contract for managing multiple event contracts
-IERC721 / Ownable	OpenZeppelin security and ownership modules
-🧩 Future Enhancements
-
-✅ Integrate IPFS for decentralized metadata storage
-
-💰 Add resale royalties for event organizers
-
-📱 Develop a mobile-friendly version using React Native
-
-🧾 Enable on-chain analytics and proof-of-attendance NFTs
-
-🧑‍💻 Contributors
-Name	Role
-Prithvi Ganiger
-	Developer, Smart Contract Architect
-🛡️ License
-
-This project is licensed under the MIT License — free to modify and distribute.
-
-📸 Preview (Optional)
-
-(You can later add screenshots or GIFs here)
-Example:
-
-
-💬 Contact
-
-📧 Email: prithviganiger@gmail.com
-
-🔗 LinkedIn: linkedin.com/in/prithvi-ganiger-10bb11365
-
-🌐 GitHub: github.com/16Prithvi
