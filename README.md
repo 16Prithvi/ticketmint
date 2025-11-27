@@ -1,63 +1,135 @@
-# 🎟️ TicketMint — Blockchain Event Ticketing Platform
+<div align="center">
 
-[![Solidity](https://img.shields.io/badge/Solidity-2E8B57?style=for-the-badge&logo=solidity&logoColor=white)]()
-[![Polygon](https://img.shields.io/badge/Polygon-854ce6?style=for-the-badge&logo=polygon&logoColor=white)]()
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+  <h1>🎟️ TicketMint</h1>
+  
+  <h3>The Future of Decentralized Event Ticketing</h3>
 
-**TicketMint** is a decentralized event ticketing system built on the **Polygon** blockchain.  
-It leverages **NFT-based tickets** for transparent, secure, and tamper-proof event management.
+  <p>
+    <b>Secure • Transparent • Immutable</b>
+  </p>
 
----
-
-## 🚀 Overview
-
-Traditional ticketing systems face challenges like fraud, duplication, and lack of transparency.  
-TicketMint solves these by issuing **verifiable NFTs** as event tickets, enabling seamless **on-chain validation** and **secondary market trading**.
-
----
-
-## 🌐 Live Tech Stack
-
-| Layer               | Technology                                        |
-|---------------------|--------------------------------------------------|
-| **Smart Contracts** | Solidity, OpenZeppelin                           |
-| **Blockchain**      | Polygon (Mumbai / Mainnet)                       |
-| **Frontend**        | React.js, Ethers.js, TailwindCSS                 |
-| **Wallet**          | MetaMask                                         |
-| **Backend (optional)** | Node.js (for metadata / IPFS handling)       |
-
----
-
-## ✨ Core Features
-
-- 🎫 **NFT Tickets** – Each ticket is minted as a unique **ERC-721** token.  
-- 🔒 **Immutable Smart Contracts** – Built using **OpenZeppelin** templates.  
-- ⚡ **Polygon Integration** – Faster and cheaper transactions than Ethereum mainnet.  
-- 💳 **MetaMask Payments** – Easy ticket purchase and validation directly from the wallet.  
-- 🖼️ **Ticket Metadata** – Can be stored on **IPFS** or other decentralized storage.  
-- 🧾 **Resale Tracking** – Prevents black-market resale through smart validation logic.  
+  <p>
+    <a href="https://github.com/16Prithvi/ticketmint/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/16Prithvi/ticketmint?style=for-the-badge&logo=github&color=00f2ea" alt="Contributors" />
+    </a>
+    <a href="https://github.com/16Prithvi/ticketmint/network/members">
+      <img src="https://img.shields.io/github/forks/16Prithvi/ticketmint?style=for-the-badge&logo=github&color=ff0050" alt="Forks" />
+    </a>
+    <a href="https://github.com/16Prithvi/ticketmint/stargazers">
+      <img src="https://img.shields.io/github/stars/16Prithvi/ticketmint?style=for-the-badge&logo=github&color=yellow" alt="Stars" />
+    </a>
+    <a href="https://github.com/16Prithvi/ticketmint/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License" />
+    </a>
+  </p>
+  
+  <br />
+</div>
 
 ---
 
-## ⚙️ Setup Instructions
+## 📋 Table of Contents
 
-### 1️⃣ Prerequisites
-
-Make sure you have:
-
-- **Node.js** ≥ 16.x  
-- **npm** or **yarn**  
-- **MetaMask** installed and connected to the **Polygon Mumbai** testnet  
+1. [🤖 About The Project](#-about-the-project)
+2. [⚙️ Tech Stack](#-tech-stack)
+3. [✨ Key Features](#-key-features)
+4. [📸 Screenshots](#-screenshots)
+5. [🚀 Getting Started](#-getting-started)
+6. [📜 Smart Contract Info](#-smart-contract-info)
+7. [🛣️ Roadmap](#-roadmap)
+8. [🤝 Contributing](#-contributing)
 
 ---
 
-### 2️⃣ Installation
+## 🤖 About The Project
 
+**TicketMint** is a decentralized event ticketing platform built on the **Polygon** blockchain. It addresses the critical issues plaguing the traditional ticketing industry—scalping, counterfeit tickets, and lack of transparency.
+
+By leveraging **NFT (Non-Fungible Token)** technology, every ticket issued on TicketMint is a unique digital asset. This ensures verifiable ownership, allows for controlled secondary market trading, and provides organizers with real-time data on ticket lifecycles.
+
+---
+
+## ⚙️ Tech Stack
+
+| Component | Technology | Description |
+| :--- | :--- | :--- |
+| **Blockchain** | <img src="https://img.shields.io/badge/Polygon-8247E5?style=flat&logo=polygon&logoColor=white"/> | High-speed, low-cost EVM network (Mumbai/Mainnet) |
+| **Smart Contracts** | <img src="https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white"/> | Core logic for minting and validation (ERC-721) |
+| **Frontend** | <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"/> | Interactive UI with Hooks and Context API |
+| **Styling** | <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white"/> | Responsive and modern design framework |
+| **Web3 Client** | <img src="https://img.shields.io/badge/Ethers.js-2A2C3E?style=flat&logo=ethereum&logoColor=white"/> | Blockchain interaction and state management |
+| **Storage** | <img src="https://img.shields.io/badge/IPFS-65C2CB?style=flat&logo=ipfs&logoColor=white"/> | Decentralized storage for NFT metadata |
+
+---
+
+## ✨ Key Features
+
+* **🎫 verifiable NFT Tickets:** Every ticket is an ERC-721 token, preventing duplication and fraud.
+* **💳 Seamless Payments:** Purchase tickets directly using crypto via MetaMask.
+* **🧾 Resale Controls:** Smart contracts can enforce royalty fees or price caps on secondary sales.
+* **📱 QR Validation:** (Planned) On-chain ownership verification via QR codes at entry.
+* **🖼️ Dynamic Metadata:** Event details stored securely on IPFS.
+* **⚡ Low Gas Fees:** Optimized for the Polygon network to ensure affordability for users.
+
+---
+
+## 📸 Screenshots
+
+*(Add your screenshots here. If you don't have them yet, delete this section or leave these placeholders)*
+
+| Landing Page | Event Dashboard |
+| :---: | :---: |
+| <img src="https://via.placeholder.com/400x200?text=Landing+Page+UI" alt="Landing Page" /> | <img src="https://via.placeholder.com/400x200?text=Dashboard+UI" alt="Dashboard" /> |
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+* **Node.js** (v16.x or higher)
+* **MetaMask Wallet** (Browser Extension)
+* **Git**
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/16Prithvi/ticketmint.git](https://github.com/16Prithvi/ticketmint.git)
+    cd ticketmint
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Configure Environment Variables**
+    Create a `.env` file in the root directory:
+    ```env
+    REACT_APP_ALCHEMY_API_URL=your_alchemy_url_here
+    REACT_APP_CONTRACT_ADDRESS=your_deployed_contract_address
+    ```
+
+4.  **Run the application**
+    ```bash
+    npm start
+    ```
+
+The app should now be running on `http://localhost:3000`.
+
+---
+
+## 📜 Smart Contract Info
+
+* **Network:** Polygon Mumbai Testnet
+* **Contract Address:** `0x...` (Add your deployed address here)
+* **Standard:** ERC-721 (OpenZeppelin)
+
+To deploy the contracts yourself:
 ```bash
-# Clone the repository
-git clone https://github.com/16Prithvi/ticketmint.git
-cd ticketmint
-
-# Install dependencies
-npm install
+npx hardhat run scripts/deploy.js --network mumbai
